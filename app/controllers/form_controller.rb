@@ -4,7 +4,7 @@ class FormController < ApplicationController
   end
 
   def result
-    @image = params.fetch("image_param")
+    @image = params.fetch("image_param", nil)
     @description = params.fetch("description_param")
 
     render ({ :template => "form_templates/result"})
