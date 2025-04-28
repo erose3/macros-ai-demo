@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get("/blank_form", { :controller => "form", :action => "blank"})
 
-  # get("/blank_form/result", { :controller => "form", :action => "result"})
+  get("/blank_form/result", { :controller => "form", :action => "result"})
 
   get("/solutions/blank_form", { :controller => "solutions", :action => "display_form" })
   
