@@ -41,6 +41,8 @@ class FormController < ApplicationController
       },
       "strict": true
     }'
+
+    c.user("Here is an image:", image: @image)
     c.user(@description)
     @structured_output= c.assistant!
     c.assistant!
